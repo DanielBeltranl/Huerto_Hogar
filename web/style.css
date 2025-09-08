@@ -1,0 +1,71 @@
+/* Estilos para la ventana emergente personalizada */
+#customAlert {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e74c3c;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 18px;
+    z-index: 1000;
+    display: none;
+}
+.hidden {
+    display: none !important;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/Huerto_Hogar/images/image_2.png');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 24px;
+}
+form#registroForm {
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+form#registroForm label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+form#registroForm input {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form#registroForm button {
+    padding: 10px;
+    background: #2E8B57;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form#registroForm button:hover {
+    background: #166337;
+}
+
+.container { /* sin uso hasta ahora */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
