@@ -1,0 +1,28 @@
+
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    justify-items: stretch;
+    list-style: none;
+}
+
+.producto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+.producto:hover,
+.producto:focus-visible {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,.18);
+}
