@@ -34,10 +34,10 @@ productos.forEach(producto => {
 
     // language=HTML
     prod.innerHTML = `<a class="producto" href="platano.html">
-                      <img src="imagenes/${producto.id}.png" style="margin-bottom: 3px">  
+                      <img src="imagenes/${producto.id}.png" style="margin-bottom: 3px ; border-style: solid ; border-color: rgb(126,126,126,0.5)">  
                       <span style="font-size: 22px; margin-bottom: 7px">${producto.nombre}</span>
                       <span style="text-align: justify; margin-bottom: 7px"><strong>Descripción: </strong>${producto.descripcion}</span>  
-                      <span style="margin-bottom: 7px"><strong>Precio: </strong>${producto.precio}</span>
+                      <span style="margin-bottom: 7px"><strong>Precio: </strong>${producto.precio} $</span>
                       <span style="margin-bottom: 7px"><strong>Categoria: </strong>${producto.categoria}</span>
                       <span style="margin-bottom: 7px"><strong>Stock: </strong>${producto.stock}</span>
                       </a>`
