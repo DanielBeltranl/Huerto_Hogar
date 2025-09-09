@@ -1,0 +1,33 @@
+.desc {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(.4,0,.2,1), opacity 0.5s ease;
+}
+
+/* Cuando el mouse pasa por encima del card, muestra la descripción */
+#item:hover .desc {
+    max-height: 500px; /* Ajusta según el contenido esperado */
+    opacity: 1;
+}
+
+#d-menu:hover {
+    background-color: rgba(126, 126, 126, 1);
+    color: rgba(126, 126, 126, 1);
+}
+
+body {
+    background-image: url("Imagenes/fondo.png");
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.my-navbar {
+    background-color: rgba(139, 69, 19, 0.5);
+    color: white;
+}
