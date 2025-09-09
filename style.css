@@ -1,3 +1,18 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.footer-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+
+
 .desc {
     max-height: 0;
     opacity: 0;
@@ -30,4 +45,7 @@ img {
 .my-navbar {
     background-color: rgba(139, 69, 19, 0.5);
     color: white;
+}
+.footer-menu li {
+    margin: 0 20px;  /* 20px a la izquierda y derecha */
 }
