@@ -27,11 +27,30 @@ const productos = [
     new Producto('PL001', 'Leche Entera', 4200, 'Leche fresca y cremosa, fuente de calcio y proteínas.', 'Productos Lácteos', 100)
 ];
 
+document.querySelectorAll('#d-menu .dropdown-item').forEach(item => {
+    item.addEventListener('click', function() {
+        document.getElementById('dropdmbtn').textContent = this.textContent;
+    });
+});
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const catalogo = document.querySelector('#catalog-display');
     func.mostrarCatalogo(catalogo, productos);
 });
+
+const btnFiltrar = document.querySelector('#btnFiltrar');
+
+btnFiltrar.addEventListener('click', () => {
+
+    const categoria = document.querySelector('#dropdmbtn').textContent;
+    const catalogo = document.querySelector('#catalog-display');
+    func.filtrarProductos(catalogo, productos, categoria);
+
+
+})
 
 
 

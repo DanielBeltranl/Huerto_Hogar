@@ -1,6 +1,8 @@
 export function mostrarCatalogo (catalogo, productos) {
 
+    catalogo.innerHTML = "";
     productos.forEach(producto => {
+
 
         const prod = document.createElement('div');
         prod.className = 'col-lg-3 col-md-5  col-sm-12  col-10 max-auto mb-4 pd-2';
@@ -28,4 +30,16 @@ export function mostrarCatalogo (catalogo, productos) {
         catalogo.appendChild(prod);
 
     })
+}
+
+export function filtrarProductos (catalogo, productos, criterio) {
+
+    if (criterio !== "Limpiar filtro") {
+
+        let catalogoFiltrado = productos.filter(producto => producto.categoria === criterio);
+
+        mostrarCatalogo(catalogo, catalogoFiltrado);
+    }else{
+        mostrarCatalogo(catalogo, productos);
+    }
 }
