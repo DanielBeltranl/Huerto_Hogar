@@ -35,7 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         showCustomAlert('Registro exitoso');
-        // form.submit(); // Descomenta esta línea si quieres enviar el formulario realmente***
+        setTimeout(function() {
+            window.location.href = 'login.html'; // Redirige al login después del registro
+        }, 2000);
+        
 
     });
 

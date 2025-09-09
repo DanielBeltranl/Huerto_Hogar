@@ -18,7 +18,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/Huerto_Hogar/images/image_2.png');
+    background-image: url('/Huerto_Hogar/images/image_1.png');
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -28,9 +28,15 @@ body {
     align-items: center;
 }
 h1 {
-    color: #2c3e50;
+    color: #f8f7f7e8;
     text-align: center;
     margin-bottom: 24px;
+    background: rgba(128,128,128,0.5); 
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 254, 254, 0.08);
+    display: inline-block;
+    margin-top: 24px;
 }
 form#registroForm {
     background: #fff;
