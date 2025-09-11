@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Simulación de login exitoso
         showCustomAlert('Login exitoso');
         setTimeout(function() {
-            window.location.href = 'formulario.html'; // Redirige a la página principal
+            window.location.href = '../index.html'; // Redirige a la página principal
         }, 2000);
     });
 });
